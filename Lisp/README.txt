@@ -1,9 +1,9 @@
 ﻿LittleManComputer - by 829474 Sgro Mattia
 Lisp implementation
-(possibily following the ANSI CL)
+(possibly following the ANSI CL)
 
 
-Built with Emcas, LispWorks when needed, with much but less love than prolog. 
+Built with Emacs, Lisp Works when needed, with much but less love than prolog. 
 By Mattia Sgro,
 badge number 829474, student at Universita' degli Studi di Milano - Bicocca
 
@@ -23,14 +23,14 @@ If you are under windows you can *try* to use LispWorks personal edition,
 compiling al loading
     > lmc.lisp
     > lmc_run('assembly.lmc', your_input_queue, Out)
-your input queue must be a list with your inputs (in any requested by your as-
-sembly file)
+your input queue must be a list with your inputs (in any requested by your
+assembly file)
 If you are now following the path to be what I'll never be - a Jedi Master -
 you can use SBCL for your *nix distribution.
 
 - Function Specification -
 I won't ensure anything, but the code is (uncommented) less than 300 lines.
-I belive that such things have to be underlined!
+I believe that such things have to be underlined!
 
 is-istr (string) => T / NIL
     true if given input is an instruction of the LMC instruction set
@@ -47,7 +47,7 @@ replace-in-list (list item-to-insert index) => newlist
 
 
 parse-comments (string)
-    pareses comments
+    parses comments
 fill-no-op (list)
     fills instruction with no argument with argument 0 (to simplify code)
 no-space (string)

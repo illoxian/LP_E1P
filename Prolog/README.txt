@@ -63,25 +63,25 @@ labeler/3
     makes a list of labels used in the file (just those to jump to), and removes
     them from the memory
 assemble/3
-    assembles memory istruction from TEXT STRING to MACHINE CODE
+    assembles memory instruction from TEXT STRING to MACHINE CODE
 substituteLabels/3
-    uses the list of labels made by labeler to substitute labels in istruction
+    uses the list of labels made by labeler to substitute labels in instruction
     with respective addresses
 fill_trail_zeros/2
     fills the memory until it's made by 100 cells
-    (possibily, launch this right after the comment parser to fail in case of
+    (possibly, launch this right after the comment parser to fail in case of
     memories greater than 100)
 
 
 lmc_load/2
     standard predicate given in the implementation: loads and ASM file and pulls
-    out a memory of 100 istructions 
+    out a memory of 100 instructions 
 lmc_run/3
     calls lmc_load and runs LMC SIMULTOR 
 execution_loop/2
-    given an istruction, iterates one_instruction/2 until finds an HALTED_STATE
+    given an instruction, iterates one_instruction/2 until finds an HALTED_STATE
 one_instruction/2
-    given an istruction, executes it (one program counter step). One or more
+    given an instruction, executes it (one program counter step). One or more
     goals for each ASM instruction.
 
 
